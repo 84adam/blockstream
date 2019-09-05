@@ -63,7 +63,7 @@ def btc_utc(ts):
 def last_ten():
     last_ten = get_blocks()
     output = []
-    header = f'{"HEADER":<9}{"HASH":<67}{"TIME (UTC)":<23}'
+    header = f'{"HEIGHT":<9}{"HASH":<67}{"TIME (UTC)":<23}'
     output.append(header)
     for i in last_ten:
         output.append(i)
