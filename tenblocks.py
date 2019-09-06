@@ -74,6 +74,15 @@ def print_last_ten():
     for i in output:
         print(i)
 
+# format for embedding in HTML iframe
+
+def last_ten_html():
+    output = last_ten()
+    print("<html><body><pre>")
+    for i in output:
+        print(i)
+    print("</pre></body></html>")
+        
 class Block:
     """Bitcoin block utility class"""
     def __init__(self, block):
@@ -90,5 +99,12 @@ class Block:
         self.bits = block['bits']
     def __repr__(self):
         return f"{self.height} - {self.id} - {btc_utc(self.timestamp)}"
-    
-print_last_ten()
+
+if __name__ == "__main__":
+    choice = int(input("Please select: (1) Print last 10 blocks; (2) HTML format: "))
+    if choice == 1:
+        print_last_ten()
+    elif choice == 2:
+        last_ten_html()
+    else:
+        print(get_blocks())
