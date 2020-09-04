@@ -21,8 +21,8 @@ pip3 install blockstream
 
 ## Run standalone "Ten Blocks" script
 
-`git clone https://github.com/84adam/blockstream.git ; cd blockstream/ ; chmod +x tenblocks.py`
-`./tenblocks.py`
+- `git clone https://github.com/84adam/blockstream.git ; cd blockstream/ ; chmod +x tenblocks.py`
+- `./tenblocks.py`
 
 **EXAMPLE OUTPUT FROM 'tenblocks.py':**
 
